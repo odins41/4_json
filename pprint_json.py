@@ -4,7 +4,7 @@ import json
 def load_data(data):
     with open(data) as json_file:
         json_string = json_file.read()
-        parsed_string = json.loads(json_string)
+        parsed_string = json.load(json_string)
         return parsed_string
 
 
